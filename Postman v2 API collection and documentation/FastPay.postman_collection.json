@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "6a6a92bc-df19-4b58-95d7-935a84697ed8",
+		"name": "FastPay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8083/credit/9415926509",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"amount\": 6666\r\n}\r\n    \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/credit/9415926509",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"credit",
+						"9415926509"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/balance/94159265097",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/balance/9682909583",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"balance",
+						"9682909583"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/userdetail/9682909583",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/userdetail/9682909583",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"userdetail",
+						"9682909583"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/add/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phoneNo\": 9415926509,\r\n    \"name\": \"praveen chandra\",\r\n    \"lastName\": \"GUPTA\",\r\n    \"bal\": 10000.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/add/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"add",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/transfer/9682909583",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phoneno\":9415926509,\r\n    \"amount\":500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/transfer/9682909583",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"transfer",
+						"9682909583"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/debit/9415926509",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\":500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/debit/9415926509",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"debit",
+						"9415926509"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
